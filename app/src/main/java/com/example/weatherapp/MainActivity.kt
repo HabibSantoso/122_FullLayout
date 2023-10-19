@@ -113,25 +113,26 @@ fun DetailBox() {
         .clip(RoundedCornerShape(25.dp))
         .background(color = Color.Cyan)) {
         Column(horizontalAlignment = Alignment.CenterHorizontally,
-        modifier = Modifier.fillMaxSize().height(200.dp)) {
-            Row() {
-                Column() {
-                    Text(text = "Humidity")
-                    Text(text = "60%")
+            verticalArrangement = Arrangement.SpaceBetween,
+        modifier = Modifier.fillMaxSize().padding(35.dp)) {
+            Row(modifier = Modifier.fillMaxWidth(), horizontalArrangement = Arrangement.SpaceBetween) {
+                Column(horizontalAlignment = Alignment.CenterHorizontally) {
+                    Text(text = "Humidity", textAlign = TextAlign.Center)
+                    Text(text = "60%", textAlign = TextAlign.Center)
                 }
-                Column() {
-                    Text(text = "Wind")
-                    Text(text = "20 m/s")
+                Column(horizontalAlignment = Alignment.CenterHorizontally) {
+                    Text(text = "Wind", textAlign = TextAlign.Center)
+                    Text(text = "20 m/s", textAlign = TextAlign.Center)
                 }
             }
-            Row() {
-                Column() {
-                    Text(text = "Sunrice")
-                    Text(text = "05:25")
+            Row(modifier = Modifier.fillMaxWidth(), horizontalArrangement = Arrangement.SpaceBetween) {
+                Column(horizontalAlignment = Alignment.CenterHorizontally) {
+                    Text(text = "Sunrice", textAlign = TextAlign.Center)
+                    Text(text = "05:25", textAlign = TextAlign.Center)
                 }
-                Column() {
-                    Text(text = "Sunset")
-                    Text(text = "17:45")
+                Column(horizontalAlignment = Alignment.CenterHorizontally) {
+                    Text(text = "Sunset", textAlign = TextAlign.Center)
+                    Text(text = "17:45", textAlign = TextAlign.Center)
                 }
             }
         }
