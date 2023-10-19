@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Weather App</string>
+    <string name="hujan">Rain</string>
+    <string name="dlokasi">Kasihan,Kanbupaten Bantul, Daerah Istimewa Yoyakarta</string>
+    <string name="aging">Wind</string>
+    <string name="kelembatapn">Humidity</string>
+    <string name="terbit">Sunrice</string>
+    <string name="terbenam">Sunset</string>
+</resources>
